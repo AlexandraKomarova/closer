@@ -16,7 +16,7 @@ import PrivateRoute from '../routing/PrivateRoute';
 
 const Routes = () => {
   return (
-    <section className="container">
+    <>
       <Alert />
       <Switch>
         <Route exact path="/register" component={Register} />
@@ -32,7 +32,7 @@ const Routes = () => {
         <PrivateRoute exact path="/posts/:id" component={Post} />
         <Route component={NotFound} />
       </Switch>
-    </section>
+  </>
   );
 };
 

@@ -9,13 +9,13 @@ const Landing = ({ isAuthenticated }) => {
   }
 
   return (
-    <section className='landing'>
-      <div className='dark-overlay'>
-        <div className='landing-inner'>
+    <div className="">
+      
+        <div className='landing-wrapper'>
           <p className='lead'>
             How can we get
           </p>
-          <h1 className='x-large'>&#123;closer&#125;?</h1>
+          <h1 className='x-large closer'>&#123;closer&#125;?</h1>
           <div className='buttons'>
             <Link to='/register' className='btn'>
               Sign Up
@@ -24,9 +24,9 @@ const Landing = ({ isAuthenticated }) => {
               Login
             </Link>
           </div>
-        </div>
+      
       </div>
-    </section>
+    </div>
   );
 };
 

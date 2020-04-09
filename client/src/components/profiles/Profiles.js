@@ -11,16 +11,12 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
   }, [getProfiles]);
 
   return (
-    <Fragment>
+    <div className="profiles-wrapper">
       {loading ? (
         <Spinner />
       ) : (
         <Fragment>
-          <h1 className='large text-primary'>Developers</h1>
-          <p className='lead'>
-            <i className='fab fa-connectdevelop' /> Browse and connect with
-            developers
-          </p>
+          <p className='welcome'>Connect with members of our community</p>
           <div className='profiles'>
             {profiles.length > 0 ? (
               profiles.map(profile => (
@@ -32,7 +28,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
           </div>
         </Fragment>
       )}
-    </Fragment>
+    </div>
   );
 };
 

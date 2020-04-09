@@ -48,11 +48,11 @@ img {
 .container {
   max-width: 900px;
   margin: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 0 2rem;
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-bottom: 3rem;
-  height: 71.5vh;
+  height: 100%;
 }
 
 /* Text Styles*/
@@ -167,57 +167,64 @@ img {
 }
 
 .alert {
+  width: 80%;
   padding: 0.8rem;
-  margin: 1rem 0;
+  margin: 0 auto;
   opacity: 0.9;
-  background: var(--light-color);
+  background: none;
+  color:#2d0136;
+  border-radius: 8px;
+  border: 1px solid #2d0136;
+}
+
+.alert-danger {
+  background-color: rgba(255, 0, 0, 0.2);
+  color:#2d0136;
+}
+
+.alert-success {
+  background-color: transparent;
   color:#2d0136;
 }
 
 .btn-primary,
 .bg-primary,
-.badge-primary,
-.alert-primary {
+.badge-primary {
   background: var(--primary-color);
   color: #fff;
 }
 
 .btn-light,
 .bg-light,
-.badge-light,
-.alert-light {
+.badge-light {
   background: var(--light-color);
   color: #333;
 }
 
 .btn-dark,
 .bg-dark,
-.badge-dark,
-.alert-dark {
+.badge-dark {
   background: var(--dark-color);
   color: #fff;
 }
 
 .btn-danger,
 .bg-danger,
-.badge-danger,
-.alert-danger {
+.badge-danger {
   background: var(--danger-color);
   color: #fff;
 }
 
 .btn-success,
 .bg-success,
-.badge-success,
-.alert-success {
+.badge-success {
   background: var(--success-color);
   color: #fff;
 }
 
 .btn-white,
 .bg-white,
-.badge-white,
-.alert-white {
+.badge-white {
   background: #fff;
   color: #333;
   border: #ccc solid 1px;
@@ -260,7 +267,7 @@ img {
 .form .form-text {
   display: block;
   margin-top: 0.3rem;
-  color: #888;
+  color:#7676a3;
 }
 
 .form input[type='text'],
@@ -291,21 +298,21 @@ button {
   width: 4rem;
 }
 
-.form .social-input i.fa-twitter {
+/* .form .social-input {
   color: #38a1f3;
 }
-.form .social-input i.fa-facebook {
+.form .social-input {
   color: #3b5998;
 }
-.form .social-input i.fa-instagram {
+.form .social-input {
   color: #3f729b;
 }
-.form .social-input i.fa-youtube {
+.form .social-input {
   color: #c4302b;
 }
-.form .social-input i.fa-linkedin {
+.form .social-input {
   color: #0077b5;
-}
+} */
 
 .table th,
 .table td {
@@ -323,7 +330,7 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 0.7rem 2rem;
-  position: fixed;
+  /* position: fixed; */
   z-index: 1;
   width: 100%;
   top: 0;
@@ -353,7 +360,7 @@ button {
 .landing {
   position: relative;
   background: none;
-  height: 100vh;
+  height: 96vh;
 }
 
 .landing-inner {
@@ -377,6 +384,7 @@ button {
   padding: 1rem;
   line-height: 1.8;
   margin-bottom: 1rem;
+  border-bottom: 1px solid #2d0136;
 }
 
 /* Profile Page */
@@ -483,6 +491,7 @@ button {
   grid-template-columns: 1fr 4fr;
   grid-gap: 2rem;
   align-items: center;
+  border-bottom: 1px solid #2d0136;
 }
 
 .post > div:first-child {
@@ -502,7 +511,7 @@ button {
 }
 
 .post .post-date {
-  color: #aaa;
+  color:#545478;
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
 }
@@ -608,6 +617,7 @@ button {
 input {
   border-radius: 8px;
   padding: 15px;
+  color: #2d0136;
 }
 
 ::placeholder {
@@ -617,3 +627,89 @@ input {
 .sign-in {
   color:#545478;
 }
+
+.welcome {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+
+.landing-wrapper {
+  height: 100vh;
+  /* overflow: hidden; */
+  text-align: center;
+  margin-top: 8rem;
+}
+
+.login-wrapper {
+  height: 100vh;
+  margin: auto;
+  /* overflow: hidden; */
+  padding: 0 20rem;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+}
+
+.signup-wrapper {
+  height: 100vh;
+  margin: auto;
+  /* overflow: hidden; */
+  padding: 0 20rem;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+}
+
+.profiles-wrapper {
+  height: 100vh;
+  margin: auto;
+  /* overflow: hidden; */
+  padding: 0 20rem;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+}
+
+.dashboard-wrapper {
+  height: 100vh;
+  margin: auto;
+  /* overflow: hidden; */
+  padding: 0 20rem;
+  margin-top: 7rem;
+  margin-bottom: 3rem;
+}
+
+.profile-wrapper {
+  height: 100vh;
+  margin: auto;
+  /* overflow: hidden; */
+  padding: 0 20rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.form-wrapper {
+  margin: auto;
+  /* overflow: hidden; */
+  padding: 0 2rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  height: 100%;
+}
+
+textarea {
+  border-radius: 8px;
+  color: #2d0136;
+}
+
+i.fa-instagram, i.fa-facebook {
+  color: #2d0136;
+}
+
+.closer {
+  margin-bottom: 3rem;
+}
+
+.post-name {
+  font-size: 1.5rem;
+  color: #2d0136;
+}
+
+
