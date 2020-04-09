@@ -14,7 +14,7 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
   return loading ? (
     <Spinner />
   ) : (
-    <div className='dashboard-wrapper'>
+    <div className='posts-wrapper'>
       <p className='welcome'>
         Welcome to the community
       </p>

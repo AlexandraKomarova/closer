@@ -45,15 +45,15 @@ img {
 }
 
 /* Utilities */
-.container {
+/* .container {
   max-width: 900px;
   margin: auto;
-  /* overflow: hidden; */
+  
   padding: 0 2rem;
   margin-top: 5rem;
   margin-bottom: 3rem;
   height: 100%;
-}
+} */
 
 /* Text Styles*/
 .x-large {
@@ -245,7 +245,7 @@ img {
 
 .line {
   height: 1px;
-  background: #ccc;
+  background-color:#2d0136;
   margin: 1.5rem 0;
 }
 
@@ -516,94 +516,6 @@ button {
   margin-bottom: 0.5rem;
 }
 
-/* Mobile Styles */
-@media (max-width: 700px) {
-  .container {
-    margin-top: 8rem;
-  }
-
-  .hide-sm {
-    display: none;
-  }
-
-  /* Text Styles */
-  .x-large {
-    font-size: 3rem;
-  }
-
-  .large {
-    font-size: 2rem;
-  }
-
-  .lead {
-    font-size: 1rem;
-  }
-
-  /* Navbar */
-  .navbar {
-    display: block;
-    text-align: center;
-  }
-
-  .navbar ul {
-    text-align: center;
-    justify-content: center;
-  }
-
-  .navbar h1 {
-    margin-bottom: 1rem;
-  }
-
-  .navbar .welcome {
-    display: none;
-  }
-
-  /* Profiles Page */
-  .profile {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .profile ul {
-    display: none;
-  }
-
-  /* Profile Page */
-
-  .profile-top img,
-  .profile img {
-    width: 200px;
-    margin: auto;
-  }
-
-  .profile-grid {
-    grid-template-areas:
-      'top'
-      'about'
-      'exp'
-      'edu'
-      'github';
-  }
-
-  .profile-about .skills {
-    flex-direction: column;
-  }
-
-  .dash-buttons a {
-    display: block;
-    width: 100%;
-    margin-bottom: 0.2rem;
-  }
-
-  .post {
-    grid-template-columns: 1fr;
-  }
-  .post a,
-  .post button {
-    padding: 0.3rem 0.4rem;
-  }
-}
-
 .brand {
   letter-spacing: 0.5vw;
 }
@@ -685,6 +597,15 @@ input {
   margin-bottom: 3rem;
 }
 
+.posts-wrapper {
+  height: 100vh;
+  margin: auto;
+  /* overflow: hidden; */
+  padding: 0 20rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
 .form-wrapper {
   margin: auto;
   /* overflow: hidden; */
@@ -710,6 +631,173 @@ i.fa-instagram, i.fa-facebook {
 .post-name {
   font-size: 1.5rem;
   color: #2d0136;
+}
+
+/* Mobile Styles */
+@media (max-width: 700px) {
+  /* .container {
+    margin-top: 8rem;
+  } */
+
+  .form .form-group {
+    margin: 1.2rem 1.2rem;
+  }
+
+  /* body {
+    width: 100vw;
+  } */
+
+  .hide-sm {
+    display: none;
+  }
+
+  /* Text Styles */
+  .x-large {
+    font-size: 3rem;
+  }
+
+  .large {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 2.5rem;
+  }
+
+  /* Navbar */
+  .navbar {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar ul {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .navbar h1 {
+    margin-bottom: 1rem;
+  }
+
+  .navbar .welcome {
+    display: none;
+  }
+
+  /* Profiles Page */
+  .profile {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .profile ul {
+    display: none;
+  }
+
+  /* Profile Page */
+
+  .profile-top img,
+  .profile img {
+    width: 200px;
+    margin: auto;
+  }
+
+  .profile-grid {
+    grid-template-areas:
+      'top'
+      'about'
+      'exp'
+      'edu'
+      'github';
+  }
+
+  .profile-about .skills {
+    flex-direction: column;
+  }
+
+  .dash-buttons a {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.2rem;
+  }
+
+  .post {
+    grid-template-columns: 1fr;
+  }
+  .post a,
+  .post button {
+    padding: 0.3rem 0.4rem;
+  }
+
+  .landing-wrapper {
+    height: 100vh;
+    /* overflow: hidden; */
+    text-align: center;
+    margin-top: 8rem;
+  }
+  
+  .login-wrapper {
+    height: 100vh;
+    margin: auto;
+    /* overflow: hidden; */
+    padding: 1rem;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+  }
+  
+  .signup-wrapper {
+    height: 100vh;
+    width: 100%;
+   
+    /* overflow: hidden; */
+    padding: 1rem;
+    /* margin-top: 7rem;
+    margin-bottom: 3rem; */
+  }
+  
+  .profiles-wrapper {
+    height: 100vh;
+    margin: auto;
+    /* overflow: hidden; */
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .dashboard-wrapper {
+    height: 100vh;
+    margin: auto;
+    /* overflow: hidden; */
+    padding: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .profile-wrapper {
+    height: 100vh;
+    margin: auto;
+    /* overflow: hidden; */
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .posts-wrapper {
+    height: 100%;
+    margin: auto;
+    /* overflow: hidden; */
+    padding: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .form-wrapper {
+    margin: auto;
+    /* overflow: hidden; */
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    height: 100%;
+  }
 }
 
 
