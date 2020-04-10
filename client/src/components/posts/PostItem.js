@@ -17,7 +17,7 @@ const PostItem = ({
     <div>
       <Link to={`/profile/${user}`}>
         {/* <img className='round-img' src={avatar} alt='' /> */}
-        <h2 className="post-name">{name}</h2>
+        <h2 className="post-name">{name}'s post</h2>
       </Link>
     </div>
     <div>

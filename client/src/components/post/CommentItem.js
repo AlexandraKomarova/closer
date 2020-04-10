@@ -16,7 +16,7 @@ const CommentItem = ({
     <div>
       <Link to={`/profile/${user}`}>
         {/* <img className='round-img' src={avatar} alt='' /> */}
-        <h4 className="post-name">{name}</h4>
+        <h4 className="post-name">{name}'s post</h4>
       </Link>
     </div>
     <div>

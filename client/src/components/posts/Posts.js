@@ -19,6 +19,7 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
         Welcome to the community
       </p>
       <PostForm />
+      <h3>Recent posts</h3>
       <div className='posts'>
         {posts.map(post => (
           <PostItem key={post._id} post={post} />
