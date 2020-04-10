@@ -503,11 +503,12 @@ button {
 }
 
 .post .comment-count {
-  background: var(--light-color);
-  color: var(--primary-color);
+  background: none;
+  color: #2d0136;
   padding: 0.1rem 0.2rem;
   border-radius: 5px;
   font-size: 0.8rem;
+  border: 1px solid #2d0136
 }
 
 .post .post-date {
@@ -603,6 +604,24 @@ input {
   /* overflow: hidden; */
   padding: 0 20rem;
   margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.post-comments-wrapper {
+  height: 100%;
+  margin: auto;
+  /* overflow: hidden; */
+  padding: 0 20rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.comments-wrapper {
+  height: 100%;
+  margin: auto;
+  /* overflow: hidden; */
+  padding: 0;
+  margin-top: 1rem;
   margin-bottom: 3rem;
 }
 

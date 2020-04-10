@@ -11,11 +11,12 @@ const CommentItem = ({
   auth,
   deleteComment
 }) => (
-  <div className='post bg-white p-1 my-1'>
+  <div className='comments-wrapper'>
+  <div className='post p-1 my-1'>
     <div>
       <Link to={`/profile/${user}`}>
-        <img className='round-img' src={avatar} alt='' />
-        <h4>{name}</h4>
+        {/* <img className='round-img' src={avatar} alt='' /> */}
+        <h4 className="post-name">{name}</h4>
       </Link>
     </div>
     <div>
@@ -33,6 +34,7 @@ const CommentItem = ({
         </button>
       )}
     </div>
+  </div>
   </div>
 );
 
