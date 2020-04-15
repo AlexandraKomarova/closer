@@ -11,6 +11,7 @@ connectDB();
 app.use(express.json());
 
 // Define Routes
+// first arg is the end point, second - file that describes it
 app.use('/api/users', require('./routes/api/users'));
 app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/profile', require('./routes/api/profile'));

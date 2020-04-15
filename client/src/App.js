@@ -12,13 +12,22 @@ import setAuthToken from './utils/setAuthToken';
 
 import './App.css';
 
+// call loadUser() that hits GET api/auth and send the data (user) recieved from the back, user gets put in the state, token goes to local storage
+// files to check: 
+// routes/api/auth.js (back)
+// middleware/auth.js (back)
+// utils/setAuthToken.js (front)
+// actions/auth.js (front)
+// reducers/auth.js (front)
+
 const App = () => {
   useEffect(() => {
     setAuthToken(localStorage.token);
-    store.dispatch(loadUser());
+    store.dispatch(loadUser()); // dispatch directly from the store
   }, []);
 
   return (
+    // pass in the store to the Provider
     <Provider store={store}>
       <Router>
         <Fragment>

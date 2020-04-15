@@ -1,17 +1,18 @@
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
-import rootReducer from './reducers';
+import rootReducer from './reducers'; // we call it index.js so we can just say from ./reducers
 import setAuthToken from './utils/setAuthToken';
 
 const initialState = {};
 
-const middleware = [thunk];
+const middleware = [thunk]; // set to an array, we just only have one
 
-const store = createStore(
+const store = createStore( // takes in:
   rootReducer,
   initialState,
-  composeWithDevTools(applyMiddleware(...middleware))
+  // because we use redux-devtools-extension
+  composeWithDevTools(applyMiddleware(...middleware)) // composeWithDevTool takes applyMiddleware which takes ...middleware that we created up above
 );
 
 // set up a store subscription listener

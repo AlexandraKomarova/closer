@@ -1,9 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { logout } from '../../actions/auth';
 
+// pull out isAuthenticated and loading from auth state
 const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
   const authLinks = (
     <ul>
@@ -15,15 +16,14 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
       </li>
       <li>
         <Link to="/dashboard">
-          <i className='fas fa-user' />{' '}
-          <span className='hide-sm'>Account</span>
+          <i className='fas fa-user' />{' '}<span className='hide-sm'>Account</span>
         </Link>
       </li>
       <li>
-        <a onClick={logout} href='#!'>
-          <i className='fas fa-sign-out-alt' />{' '}
-          <span className='hide-sm'>Logout</span>
-        </a>
+        {/* #! has the link to go nowhere */}
+        <Link onClick={logout} to='#!'>
+          <i className='fas fa-sign-out-alt' />{' '}<span className='hide-sm'>Logout</span>
+        </Link>
       </li>
     </ul>
   );
@@ -44,12 +44,9 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
 
   return (
     <nav className='navbar'>
-      <h1 className="brand">
-        <Link to='/'>{"{ closer }"}</Link>
-      </h1>
-      {!loading && (
-        <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>
-      )}
+      <h1 className="brand"><Link to='/'>{"{ closer }"}</Link></h1>
+      {/* @ QUESTION: && to just give one condition? if there is no else? if there is an else, then ternanry?*/}
+      {!loading && ( <> { isAuthenticated ? authLinks : guestLinks } </> )}
     </nav>
   );
 };
@@ -63,7 +60,4 @@ const mapStateToProps = state => ({
   auth: state.auth
 });
 
-export default connect(
-  mapStateToProps,
-  { logout }
-)(Navbar);
+export default connect(mapStateToProps, { logout })(Navbar);
