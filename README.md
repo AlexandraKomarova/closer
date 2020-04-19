@@ -1,2 +1,2 @@
-# Closer is a mentor-on-demand social network
-Closer is a platform where you can create a profile, list your skills and experiences and become a Mentor or Advisor. Users can search a network of mentors typing a keyword, that is what they would need advice on, reach out to the mentor who is knowledgeable in the area and get a one-on-one consultation in whatever form the users will agree on. It can be a chat in the app or a video chat on another platform for example. 
+# { closer } is a mentor-on-demand social network
+{ closer } is a platform where you can create a profile, list your skills and experiences and become a Mentor or Advisor. Users can search a network of mentors typing a keyword, that is what they would need advice on, reach out to the mentor who is knowledgeable in the area and get a one-on-one consultation in whatever form the users will agree on. It can be a chat in the app or a video chat on another platform for example. 
